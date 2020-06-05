@@ -7,16 +7,22 @@
 <title>
     林下清清の小站
 </title>
-<link rel="shortcut icon" href="https://qiuier.github.io/favicon.ico?v=1591197835678">
+<link rel="shortcut icon" href="https://qiuier.github.io/favicon.ico?v=1591368226321">
 <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
 <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://qiuier.github.io/styles/main.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css">
+
 <!-- js -->
 <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://qiuier.github.io/media/js/jquery.sticky-sidebar.min.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 <script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+<!-- aplayer -->
+<script src="https://cdn.jsdelivr.net/npm/color-thief-don@2.0.2/src/color-thief.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@1.1.0/dist/Meting.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
 
 
 </head>
@@ -27,7 +33,7 @@
     <div class="nav">
         <div class="logo">
             <a href="https://qiuier.github.io">
-                <img class="avatar" src="https://qiuier.github.io/images/avatar.png?v=1591197835678" alt="">
+                <img class="avatar" src="https://qiuier.github.io/images/avatar.png?v=1591368226321" alt="">
             </a>
             <div class="site-title">
                 <h1>
@@ -97,7 +103,7 @@
                 <div class="tags-group">
                     
                         <a class="tags-tag i-tag
-                            i-tag-other_4" href="https://qiuier.github.io/tag/hG9UXcXOb/">
+                            i-tag-info" href="https://qiuier.github.io/tag/hG9UXcXOb/">
                             Gridea
                         </a>
                         
@@ -115,12 +121,32 @@
 </div>
 由&nbsp;<a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>&nbsp;强力驱动&nbsp;|&nbsp;主题 -- <a href = "https://github.com/Mrcxt/gridea-theme-lemon" target="_blank">Lemon</a> | 
   <a class="rss" href="https://qiuier.github.io/atom.xml" target="_blank">RSS</a>
+  <div id="aplayer"></div>
 </div>
 
+<script>
+  const ap = new APlayer({
+      container: document.getElementById('aplayer'),
+      fixed: true,
+      loop: none,
+      autoplay: false,
+      audio: [{
+          name: '爆炒猫头鹰-Choco Strawberry（Hea2t/Star酱 Remix）',
+          artist: 'Hea2t,Star酱',
+          url: 'http://music.163.com/song/media/outer/url?id=1347291491.mp3',
+          cover: 'http://p2.music.126.net/JRX5apIl5qViACGmAeTz6g==/109951163877718520.jpg?param=300x300',
+          lrc: '',
+      }]
+  });
+</script>
 <script>
   hljs.initHighlightingOnLoad()
 </script>
 
+
+<!--下面一行需要保持在最下面，用来预加载页面-->>
+<script src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1">
+</script>
     </div>
 </body>
 
