@@ -5,7 +5,7 @@
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>
-    关于 | 林下清清の小站
+    Gridea底部添加APlayer音乐播放器 | 林下清清の小站
 </title>
 <link rel="shortcut icon" href="https://qiuier.github.io/favicon.ico?v=1591456030955">
 <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
@@ -106,31 +106,94 @@
                 <div id="content" class="main-container-left">
                     <article class="post i-card">
                         <h2 class="post-title">
-                            关于
+                            Gridea底部添加APlayer音乐播放器
                         </h2>
                         <div class="post-info">
-                            <time class="post-time">2019-06-25</time>
+                            <time class="post-time">2020-06-06</time>
                             
+                                <a href="https://qiuier.github.io/tag/fItiexS65/" class="post-tag i-tag
+                            i-tag-other_4">
+                            #APlayer
+                        </a>
+                                
+                                <a href="https://qiuier.github.io/tag/hG9UXcXOb/" class="post-tag i-tag
+                            i-tag-warning">
+                            #Gridea
+                        </a>
+                                
                         </div>
                         
+                            <div class="post-feature-image" style="background-image: url('https://onedrive.gimhoy.com/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBb3JlMmt6ZEhYZ2VoVmFwU00wb2xnLTN5TnBhP2U9QlBrYjA0.jpg')"></div>
+                            
                                 <div class="post-content">
-                                    <blockquote>
-<p>十分有幸能在茫茫人海中遇到你<br>
-也许我们所过的每一个平凡的日常，就是连续发生的奇迹</p>
-</blockquote>
-<h2 id="关于本站">关于本站</h2>
-<p>主要以个人分享为主<br>
-自用软件分享，个人日志</p>
-<h2 id="兴趣爱好">兴趣爱好</h2>
-<p>前饥荒、现泰拉瑞亚玩家</p>
-<h2 id="泰拉瑞亚中文维基">📬 泰拉瑞亚中文维基</h2>
-<p>🎮<a href="http://trwiki.uu.cc/">http://trwiki.uu.cc/</a></p>
-<h2 id="我的前半生代更新">我的前半生（代更新）</h2>
+                                    <h1 id="gridea底部添加aplayer音乐播放器">Gridea底部添加Aplayer音乐播放器</h1>
+<h2 id="思路">思路</h2>
+<p>添加APlayer需要在Gridea的主题文件夹下修改和添加代码。</p>
+<!-- more -->
+<h2 id="添加库引用">添加库引用</h2>
+<p>首先找到<code>themes</code>文件夹当前使用的主题，我使用的是<a href="https://github.com/Mrcxt/gridea-theme-lemon">Lemon</a>主题。在主题文件夹下的<code>head.ejs</code>中添加以下代码。</p>
+<ul>
+<li>link部分</li>
+</ul>
+<pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https:\\cdn.jsdelivr.net\npm\aplayer@1.10.1\dist\APlayer.min.css&quot;&gt;
+</code></pre>
+<ul>
+<li>js部分</li>
+</ul>
+<pre><code>&lt;script src=&quot;https:\\cdn.jsdelivr.net\npm\color-thief-don@2.0.2\src\color-thief.js&quot;&gt;&lt;\script&gt;
+&lt;script src=&quot;https:\\cdn.jsdelivr.net\npm\meting@1.1.0\dist\Meting.min.js&quot;&gt;&lt;\script&gt;
+&lt;script src=&quot;https:\\cdn.jsdelivr.net\npm\aplayer@1.10.1\dist\APlayer.min.js&quot;&gt;&lt;\script&gt;
+</code></pre>
+<figure data-type="image" tabindex="1"><img src="https://onedrive.gimhoy.com/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBb3JlMmt6ZEhYZ2VoVTVidHRJd3h4dGFxYnd6P2U9Q05KWm1p.png" alt="引用部分" loading="lazy"></figure>
+<h2 id="添加容器div">添加容器div</h2>
+<p>在footer.ejs中添加以下代码</p>
+<pre><code>&lt;div id=&quot;aplayer&quot;&gt;&lt;\div&gt;
+</code></pre>
+<h2 id="使用js设置参数">使用js设置参数</h2>
+<p>在<code>div</code>下面添加</p>
+<pre><code>&lt;script&gt;
+  const ap = new APlayer({
+      container: document.getElementById('aplayer'),
+      fixed: true,
+      loop: 'none',
+      autoplay: false,
+      audio: [{
+          name: '爆炒猫头鹰-Choco Strawberry（Hea2t\Star酱 Remix）',
+          artist: 'Hea2t,Star酱',
+          url: 'http:\\music.163.com\song\media\outer\url?id=1347291491.mp3',
+          cover: 'http:\\p2.music.126.net\JRX5apIl5qViACGmAeTz6g==\109951163877718520.jpg?param=300x300',
+          lrc: '[00:00.00] 暂无歌词',
+      }]
+  });
+&lt;\script&gt;
+</code></pre>
+<figure data-type="image" tabindex="2"><img src="https://onedrive.gimhoy.com/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBb3JlMmt6ZEhYZ2VoVTMycWp4ZmxOSXRJelBmP2U9ZnpYY2VN.png" alt="div部分" loading="lazy"></figure>
+<p>其中参数意义</p>
+<ul>
+<li><code>fixed: true</code>开启底吸模式</li>
+<li><code>loop: 'none'</code>关闭循环播放</li>
+<li><code>autoplay: false</code>关闭自动播放</li>
+</ul>
+<hr>
+<h2 id="参考文章">参考文章</h2>
+<p><a href="https:%5Cjinjis.cn%5C2019%5C09%5C28%5Cwei-bo-ke-tian-jia-aplayer-yin-le-bo-fang-qi">为博客添加Aplayer音乐播放器 | Legroft</a><br>
+<a href="https:%5Cborber.cn%5Cpost%5Cadd-aplayer#outline-heading-3">BORBER</a><br>
+<a href="https:%5Caplayer.js.org#%5Czh-Hans">APlayer文档</a><br>
+<a href="https:%5Cgridea.dev%5Ctheme-structure">gridea文档</a></p>
 
                                 </div>
                     </article>
                     <!--  -->
                     
+                        <div class="next-post">
+                            <div class="next">下一篇</div>
+                            <a href="https://qiuier.github.io/post/hello-gridea/">
+                                <h3 class="post-title">
+                                    Hello Gridea
+                                </h3>
+                            </a>
+                        </div>
+                        
                             <div id="disqus_thread"></div>
                             <div id="gitalk-container"></div>
                 </div>
@@ -145,12 +208,13 @@
         <div class="toc-title i-card-title">目录</div>
         <div class="toc-content">
             <ul class="markdownIt-TOC">
-<li>
+<li><a href="#gridea%E5%BA%95%E9%83%A8%E6%B7%BB%E5%8A%A0aplayer%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8">Gridea底部添加Aplayer音乐播放器</a>
 <ul>
-<li><a href="#%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99">关于本站</a></li>
-<li><a href="#%E5%85%B4%E8%B6%A3%E7%88%B1%E5%A5%BD">兴趣爱好</a></li>
-<li><a href="#%E6%B3%B0%E6%8B%89%E7%91%9E%E4%BA%9A%E4%B8%AD%E6%96%87%E7%BB%B4%E5%9F%BA">📬 泰拉瑞亚中文维基</a></li>
-<li><a href="#%E6%88%91%E7%9A%84%E5%89%8D%E5%8D%8A%E7%94%9F%E4%BB%A3%E6%9B%B4%E6%96%B0">我的前半生（代更新）</a></li>
+<li><a href="#%E6%80%9D%E8%B7%AF">思路</a></li>
+<li><a href="#%E6%B7%BB%E5%8A%A0%E5%BA%93%E5%BC%95%E7%94%A8">添加库引用</a></li>
+<li><a href="#%E6%B7%BB%E5%8A%A0%E5%AE%B9%E5%99%A8div">添加容器div</a></li>
+<li><a href="#%E4%BD%BF%E7%94%A8js%E8%AE%BE%E7%BD%AE%E5%8F%82%E6%95%B0">使用js设置参数</a></li>
+<li><a href="#%E5%8F%82%E8%80%83%E6%96%87%E7%AB%A0">参考文章</a></li>
 </ul>
 </li>
 </ul>
