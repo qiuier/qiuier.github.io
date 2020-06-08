@@ -896,6 +896,37 @@ body {
 #disqus_thread {
   padding: 0 30px;
 }
+.fa {
+  font-family: FontAwesome !important;
+}
+.back-to-top {
+  cursor: pointer;
+  position: fixed;
+  right: 50px;
+  top: -900px;
+  z-index: 2;
+  width: 70px;
+  height: 900px;
+  background: url(../media/images/scroll.png);
+  transition: all 0.5s ease-in-out;
+  opacity: 1;
+}
+.back-to-top {
+  right: 60px;
+  width: 70px;
+  height: 900px;
+  top: -900px;
+  bottom: unset;
+  transition: all 0.5s ease-in-out;
+  background: url(../media/images/scroll.png);
+}
+.back-to-top > i {
+  display: none;
+}
+.back-to-top.back-to-top-on {
+  bottom: unset;
+  top: calc(100vh - 900px - 200px);
+}
 .id_card {
   display: flex;
   align-items: center;

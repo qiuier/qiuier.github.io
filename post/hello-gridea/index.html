@@ -7,12 +7,12 @@
 <title>
     Hello Gridea | 林下清清の小站
 </title>
-<link rel="shortcut icon" href="https://qiuier.github.io/favicon.ico?v=1591456030955">
+<link rel="shortcut icon" href="https://qiuier.github.io/favicon.ico?v=1591627676588">
 <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
 <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-<link rel="stylesheet" href="https://qiuier.github.io/styles/main.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+<link rel="stylesheet" href="https://qiuier.github.io/styles/main.css">
 
 <!-- js -->
 <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
@@ -35,7 +35,7 @@
     <div class="nav">
         <div class="logo">
             <a href="https://qiuier.github.io">
-                <img class="avatar" src="https://qiuier.github.io/images/avatar.png?v=1591456030955" alt="">
+                <img class="avatar" src="https://qiuier.github.io/images/avatar.png?v=1591627676588" alt="">
             </a>
             <div class="site-title">
                 <h1>
@@ -112,7 +112,7 @@
                             <time class="post-time">2018-12-12</time>
                             
                                 <a href="https://qiuier.github.io/tag/hG9UXcXOb/" class="post-tag i-tag
-                            i-tag-warning">
+                            i-tag-success">
                             #Gridea
                         </a>
                                 
@@ -203,6 +203,11 @@
 
 
             <div class="site-footer">
+  <p>
+    博客在风雨飘摇中度过
+    <span id="since">1天0小时0分0秒</span>
+    <span class="my-face">(o´ω`o)ﾉ</span>
+  </p>
   <div>© 2019 — <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
@@ -232,6 +237,18 @@
           lrc: '[00:00.00] 暂无歌词',
       }]
   });
+  !function t() { 
+        window.setTimeout(function () { t() }, 1e3);
+        var e = new Date('2020','5',1), 
+        n = ((new Date).getTime() - e.getTime()) / 864e5,
+        r = Math.floor(n), 
+        i = 24 * (n - r), 
+        o = Math.floor(i), 
+        a = 60 * (i - o), 
+        s = Math.floor(60 * (i - o)), 
+        l = Math.floor(60 * (a - s)); 
+        $("#since").html(r + "天" + o + "小时" + s + "分" + l + "秒") 
+    }()
 </script>
 <script>
   hljs.initHighlightingOnLoad()

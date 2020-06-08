@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://qiuier.github.io</id>
     <title>林下清清の小站</title>
-    <updated>2020-06-06T15:07:18.465Z</updated>
+    <updated>2020-06-08T15:36:50.158Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://qiuier.github.io"/>
     <link rel="self" href="https://qiuier.github.io/atom.xml"/>
@@ -10,6 +10,38 @@
     <logo>https://qiuier.github.io/images/avatar.png</logo>
     <icon>https://qiuier.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 林下清清の小站</rights>
+    <entry>
+        <title type="html"><![CDATA[洛雪音乐助手-音乐平台整合+vip解析]]></title>
+        <id>https://qiuier.github.io/post/luo-xue-yin-le-zhu-shou/</id>
+        <link href="https://qiuier.github.io/post/luo-xue-yin-le-zhu-shou/">
+        </link>
+        <updated>2020-06-08T11:42:33.000Z</updated>
+        <summary type="html"><![CDATA[<p>今天分享一款第三方音乐软件，整合了7个市面常用的音乐平台，并且拥有vip解析能力，以后再也不用氪金听vip专享了。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>今天分享一款第三方音乐软件，整合了7个市面常用的音乐平台，并且拥有vip解析能力，以后再也不用氪金听vip专享了。</p>
+<!-- more -->
+<h2 id="聚合平台">聚合平台</h2>
+<p>软件整合了酷我、酷狗、QQ、网易云、咪咕、虾米、百度平台，并且还提供了一个可以同时搜索几大平台的聚合功能，非常nice。而且作者还给它们起了一个非常有爱的名字。小蜗(<em>/ω＼</em>)太有爱了<br>
+<img src="https://onedrive.gimhoy.com/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBb3JlMmt6ZEhYZ2VoV0dRVlM5WDBLaEQtZ0lGP2U9ajhUVHZh.png" alt="导航栏" loading="lazy"></p>
+<h2 id="vip解析能力">VIP解析能力</h2>
+<p>网易云的灰色无版权，VIP歌曲等。周董的歌可以直接听了<br>
+<img src="https://onedrive.gimhoy.com/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBb3JlMmt6ZEhYZ2VoV01tRk9wc1dnU3NPTlNVP2U9b2FjMkJh.png" alt="解析" loading="lazy"><br>
+qq音乐的vip等等</p>
+<h2 id="主题">主题</h2>
+<p>作者还提供了12个非常有特色的主题，绿意盎然、信口雌黄、木叶之村等，每一个都非常漂亮。<br>
+<img src="https://onedrive.gimhoy.com/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBb3JlMmt6ZEhYZ2VoV0pMcnFzbnAtcE5UZVZlP2U9OU9nN2VK.png" alt="主题" loading="lazy"></p>
+<h2 id="注意事项">注意事项</h2>
+<p>第一次安装需要在设置中把临时接口改为测试接口，不然一些功能无法使用</p>
+<h2 id="下载">下载</h2>
+<p><a href="https://wws.lanzous.com/b01bgwtuf">蓝奏云</a> 密码:9to3<br>
+作者by落雪无痕<br>
+<a href="https://github.com/lyswhut/lx-music-desktop#readme">项目地址</a></p>
+<hr>
+<blockquote>
+<p>很多人谴责那些虐待动物的人，有时候人对人又何尝不是如此残忍</p>
+</blockquote>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[最有效的解压方法]]></title>
         <id>https://qiuier.github.io/post/zui-you-xiao-de-jie-ya-fang-fa/</id>

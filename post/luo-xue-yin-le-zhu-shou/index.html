@@ -5,7 +5,7 @@
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>
-    Gridea底部添加APlayer音乐播放器 | 林下清清の小站
+    洛雪音乐助手-音乐平台整合+vip解析 | 林下清清の小站
 </title>
 <link rel="shortcut icon" href="https://qiuier.github.io/favicon.ico?v=1591627676588">
 <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
@@ -106,80 +106,43 @@
                 <div id="content" class="main-container-left">
                     <article class="post i-card">
                         <h2 class="post-title">
-                            Gridea底部添加APlayer音乐播放器
+                            洛雪音乐助手-音乐平台整合+vip解析
                         </h2>
                         <div class="post-info">
-                            <time class="post-time">2020-06-06</time>
+                            <time class="post-time">2020-06-08</time>
                             
-                                <a href="https://qiuier.github.io/tag/fItiexS65/" class="post-tag i-tag
-                            i-tag-primary">
-                            #APlayer
-                        </a>
-                                
-                                <a href="https://qiuier.github.io/tag/hG9UXcXOb/" class="post-tag i-tag
-                            i-tag-banana">
-                            #Gridea
+                                <a href="https://qiuier.github.io/tag/07EjMNw6_/" class="post-tag i-tag
+                            i-tag-other_1">
+                            #软件分享
                         </a>
                                 
                         </div>
                         
-                            <div class="post-feature-image" style="background-image: url('https://onedrive.gimhoy.com/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBb3JlMmt6ZEhYZ2VoVmFwU00wb2xnLTN5TnBhP2U9QlBrYjA0.jpg')"></div>
+                            <div class="post-feature-image" style="background-image: url('https://onedrive.gimhoy.com/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBb3JlMmt6ZEhYZ2VoV1JTQmpkVHpFQ0xiaGQ0P2U9UFB6elVK.png')"></div>
                             
                                 <div class="post-content">
-                                    <h1 id="gridea底部添加aplayer音乐播放器">Gridea底部添加Aplayer音乐播放器</h1>
-<h2 id="思路">思路</h2>
-<p>添加APlayer需要在Gridea的主题文件夹下修改和添加代码。</p>
+                                    <p>今天分享一款第三方音乐软件，整合了7个市面常用的音乐平台，并且拥有vip解析能力，以后再也不用氪金听vip专享了。</p>
 <!-- more -->
-<h2 id="添加库引用">添加库引用</h2>
-<p>首先找到<code>themes</code>文件夹当前使用的主题，我使用的是<a href="https://github.com/Mrcxt/gridea-theme-lemon">Lemon</a>主题。在主题文件夹下的<code>head.ejs</code>中添加以下代码。</p>
-<ul>
-<li>link部分</li>
-</ul>
-<pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https:\\cdn.jsdelivr.net\npm\aplayer@1.10.1\dist\APlayer.min.css&quot;&gt;
-</code></pre>
-<ul>
-<li>js部分</li>
-</ul>
-<pre><code>&lt;script src=&quot;https:\\cdn.jsdelivr.net\npm\color-thief-don@2.0.2\src\color-thief.js&quot;&gt;&lt;\script&gt;
-&lt;script src=&quot;https:\\cdn.jsdelivr.net\npm\meting@1.1.0\dist\Meting.min.js&quot;&gt;&lt;\script&gt;
-&lt;script src=&quot;https:\\cdn.jsdelivr.net\npm\aplayer@1.10.1\dist\APlayer.min.js&quot;&gt;&lt;\script&gt;
-</code></pre>
-<figure data-type="image" tabindex="1"><img src="https://onedrive.gimhoy.com/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBb3JlMmt6ZEhYZ2VoVTVidHRJd3h4dGFxYnd6P2U9Q05KWm1p.png" alt="引用部分" loading="lazy"></figure>
-<h2 id="添加容器div">添加容器div</h2>
-<p>在footer.ejs中添加以下代码</p>
-<pre><code>&lt;div id=&quot;aplayer&quot;&gt;&lt;\div&gt;
-</code></pre>
-<h2 id="使用js设置参数">使用js设置参数</h2>
-<p>在<code>div</code>下面添加</p>
-<pre><code>&lt;script&gt;
-  const ap = new APlayer({
-      container: document.getElementById('aplayer'),
-      fixed: true,
-      loop: 'none',
-      autoplay: false,
-      audio: [{
-          name: '爆炒猫头鹰-Choco Strawberry（Hea2t\Star酱 Remix）',
-          artist: 'Hea2t,Star酱',
-          url: 'http:\\music.163.com\song\media\outer\url?id=1347291491.mp3',
-          cover: 'http:\\p2.music.126.net\JRX5apIl5qViACGmAeTz6g==\109951163877718520.jpg?param=300x300',
-          lrc: '[00:00.00] 暂无歌词',
-      }]
-  });
-&lt;\script&gt;
-</code></pre>
-<figure data-type="image" tabindex="2"><img src="https://onedrive.gimhoy.com/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBb3JlMmt6ZEhYZ2VoVTMycWp4ZmxOSXRJelBmP2U9ZnpYY2VN.png" alt="div部分" loading="lazy"></figure>
-<p>其中参数意义</p>
-<ul>
-<li><code>fixed: true</code>开启底吸模式</li>
-<li><code>loop: 'none'</code>关闭循环播放</li>
-<li><code>autoplay: false</code>关闭自动播放</li>
-</ul>
+<h2 id="聚合平台">聚合平台</h2>
+<p>软件整合了酷我、酷狗、QQ、网易云、咪咕、虾米、百度平台，并且还提供了一个可以同时搜索几大平台的聚合功能，非常nice。而且作者还给它们起了一个非常有爱的名字。小蜗(<em>/ω＼</em>)太有爱了<br>
+<img src="https://onedrive.gimhoy.com/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBb3JlMmt6ZEhYZ2VoV0dRVlM5WDBLaEQtZ0lGP2U9ajhUVHZh.png" alt="导航栏" loading="lazy"></p>
+<h2 id="vip解析能力">VIP解析能力</h2>
+<p>网易云的灰色无版权，VIP歌曲等。周董的歌可以直接听了<br>
+<img src="https://onedrive.gimhoy.com/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBb3JlMmt6ZEhYZ2VoV01tRk9wc1dnU3NPTlNVP2U9b2FjMkJh.png" alt="解析" loading="lazy"><br>
+qq音乐的vip等等</p>
+<h2 id="主题">主题</h2>
+<p>作者还提供了12个非常有特色的主题，绿意盎然、信口雌黄、木叶之村等，每一个都非常漂亮。<br>
+<img src="https://onedrive.gimhoy.com/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBb3JlMmt6ZEhYZ2VoV0pMcnFzbnAtcE5UZVZlP2U9OU9nN2VK.png" alt="主题" loading="lazy"></p>
+<h2 id="注意事项">注意事项</h2>
+<p>第一次安装需要在设置中把临时接口改为测试接口，不然一些功能无法使用</p>
+<h2 id="下载">下载</h2>
+<p><a href="https://wws.lanzous.com/b01bgwtuf">蓝奏云</a> 密码:9to3<br>
+作者by落雪无痕<br>
+<a href="https://github.com/lyswhut/lx-music-desktop#readme">项目地址</a></p>
 <hr>
-<h2 id="参考文章">参考文章</h2>
-<p><a href="https:%5Cjinjis.cn%5C2019%5C09%5C28%5Cwei-bo-ke-tian-jia-aplayer-yin-le-bo-fang-qi">为博客添加Aplayer音乐播放器 | Legroft</a><br>
-<a href="https:%5Cborber.cn%5Cpost%5Cadd-aplayer#outline-heading-3">BORBER</a><br>
-<a href="https:%5Caplayer.js.org#%5Czh-Hans">APlayer文档</a><br>
-<a href="https:%5Cgridea.dev%5Ctheme-structure">gridea文档</a></p>
+<blockquote>
+<p>很多人谴责那些虐待动物的人，有时候人对人又何尝不是如此残忍</p>
+</blockquote>
 
                                 </div>
                     </article>
@@ -187,9 +150,9 @@
                     
                         <div class="next-post">
                             <div class="next">下一篇</div>
-                            <a href="https://qiuier.github.io/post/hello-gridea/">
+                            <a href="https://qiuier.github.io/post/zui-you-xiao-de-jie-ya-fang-fa/">
                                 <h3 class="post-title">
-                                    Hello Gridea
+                                    最有效的解压方法
                                 </h3>
                             </a>
                         </div>
@@ -208,13 +171,13 @@
         <div class="toc-title i-card-title">目录</div>
         <div class="toc-content">
             <ul class="markdownIt-TOC">
-<li><a href="#gridea%E5%BA%95%E9%83%A8%E6%B7%BB%E5%8A%A0aplayer%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8">Gridea底部添加Aplayer音乐播放器</a>
+<li>
 <ul>
-<li><a href="#%E6%80%9D%E8%B7%AF">思路</a></li>
-<li><a href="#%E6%B7%BB%E5%8A%A0%E5%BA%93%E5%BC%95%E7%94%A8">添加库引用</a></li>
-<li><a href="#%E6%B7%BB%E5%8A%A0%E5%AE%B9%E5%99%A8div">添加容器div</a></li>
-<li><a href="#%E4%BD%BF%E7%94%A8js%E8%AE%BE%E7%BD%AE%E5%8F%82%E6%95%B0">使用js设置参数</a></li>
-<li><a href="#%E5%8F%82%E8%80%83%E6%96%87%E7%AB%A0">参考文章</a></li>
+<li><a href="#%E8%81%9A%E5%90%88%E5%B9%B3%E5%8F%B0">聚合平台</a></li>
+<li><a href="#vip%E8%A7%A3%E6%9E%90%E8%83%BD%E5%8A%9B">VIP解析能力</a></li>
+<li><a href="#%E4%B8%BB%E9%A2%98">主题</a></li>
+<li><a href="#%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9">注意事项</a></li>
+<li><a href="#%E4%B8%8B%E8%BD%BD">下载</a></li>
 </ul>
 </li>
 </ul>
