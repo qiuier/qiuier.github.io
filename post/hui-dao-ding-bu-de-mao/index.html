@@ -5,7 +5,7 @@
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>
-    每日一句 | 林下清清の小站
+    Gridea添加回到顶部的猫功能 | 林下清清の小站
 </title>
 <!-- style -->
 <link rel="shortcut icon" href="https://qiuier.github.io/favicon.ico?v=1591705458705">
@@ -29,6 +29,7 @@
 
 
 
+        
 </head>
 
 <body>
@@ -103,89 +104,148 @@
     });
 </script>
 
-            <div id="main-content" class="post-container main-container">
+            <div id="main-content" class="post-detail main-container">
+                <!-- left -->
                 <div id="content" class="main-container-left">
-                    
-    <div class="i-card">
-        <b>标签：#
-        每日一句</b>
-    </div>
-    
-        
-            <article class="post i-card">
-                <h2 class="post-title">
-                    <a href="https://qiuier.github.io/post/zui-you-xiao-de-jie-ya-fang-fa/">
-                        最有效的解压方法
-                    </a>
-                </h2>
-                <div class="post-info">
-                    <time class="post-time">2020-06-06</time>
-                    
-                        <a href="https://qiuier.github.io/tag/elfO3QsVN/" class="post-tag i-tag
-                            i-tag-primary">
-            #每日一句
-        </a>
-                        
-                </div>
-                <div class="post-article">
-                    
-                            <div class="post-content">
-                                
-                                        <div class="post-content-content">
-                                            转发自青年文摘
-
-最简单往往是最有效的，但是越简单越容易被忽略
-
-                                        </div>
-                                        
-                                            <a class="btn btn-text" href="https://qiuier.github.io/post/zui-you-xiao-de-jie-ya-fang-fa/">Read More ~</a>
-                            </div>
-                </div>
-            </article>
-            
-                <!-- 翻页 -->
-                
-                </div>
-                <!--  -->
-                <div class="main-container-middle"></div>
-                <!--  -->
-                <div id="sidebar" class="main-container-right">
-
-                    <!-- 个人信息 -->
-                    
-    <div class="id_card i-card">
-        <div class="id_card-avatar" style="background-image: url(https://qiuier.github.io/images/avatar.png?v=1591705458705)">
-        </div>
-        <h1 class="id_card-title">
-            林下清清の小站
-        </h1>
-        <h2 class="id_card-description">
-            我们所过的每一个平凡的日常，也许就是连续发生的奇迹
-        </h2>
-        <!--  -->
-        <div class="id_card-sns">
-            <!-- github -->
-            
-                <a href="https://github.com/qiuier" target="_blank" rel="noopener noreferrer"><i
-                class="fa fa-github"></i></a>
-                
-                    <!-- twitter -->
-                    
-                            <!-- weibo -->
+                    <article class="post i-card">
+                        <h2 class="post-title">
+                            Gridea添加回到顶部的猫功能
+                        </h2>
+                        <div class="post-info">
+                            <time class="post-time">2020-06-08</time>
                             
-                                    <!-- facebook -->
-                                    
+                                <a href="https://qiuier.github.io/tag/hG9UXcXOb/" class="post-tag i-tag
+                            i-tag-banana">
+                            #Gridea
+                        </a>
+                                
+                        </div>
+                        
+                            <div class="post-feature-image" style="background-image: url('https://onedrive.gimhoy.com/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBb3JlMmt6ZEhYZ2VoV2JzUUN5Q2NDdXBNYWhJP2U9MTZBd0JL.jpg')"></div>
+                            
+                                <div class="post-content">
+                                    <p>Gridea添加回到顶部功能<br>
+从DIYgod大佬看到小猫回到顶部的功能十分喜欢，正好Lemon这个主题没有回到顶部的功能，所以就从大佬的博客里扒了下来。</p>
+<!-- more -->
+<h2 id="具体操作">具体操作</h2>
+<p>在\assets\styles\main.less中添加</p>
+<pre><code>.back-to-top{
+	cursor: pointer;
+    position: fixed;
+    right: 50px;
+    top: -900px;
+    z-index: 2;
+    width: 70px;
+    height: 900px;
+    background: url(https://blog-static.cnblogs.com/files/fsh001/scroll.gif);
+    transition: all .5s ease-in-out;
+    opacity: 1;
+}
+
+@media (max-width: 991px){
+.back-to-top {
+    display: none!important;
+}
+}
+
+</code></pre>
+<p>在index.ejs底部</body>内添加如下代码</p>
+<pre><code>&lt;div class=&quot;back-to-top cd-top faa-float animated cd-is-visible&quot; style=&quot;top: -999px;&quot;&gt;&lt;/div&gt;
+&lt;script&gt;
+$(function() {
+    //scroll 事件适用于所有可滚动的元素和 window 对象（浏览器窗口）。
+    $(window).scroll(function() {
+            var scroHei = $(window).scrollTop();//滚动的高度
+            if (scroHei &gt; 400) {
+               $('.back-to-top').css('top','-0px');
+               // $('.back-to-top').fadeIn();
+            } else {                                                
+                $('.back-to-top').css('top','-999px');
+                // $('.back-to-top').fadeOut();
+            }
+        })
+        /*点击返回顶部*/
+    $('.back-to-top').click(function() {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 600);
+    })
+})
+&lt;/script&gt;
+</code></pre>
+<h2 id="参考文章">参考文章</h2>
+<p><a href="https://blog.csdn.net/fshool/java/article/details/104688363">博客园使用悬挂猫(上吊猫)置顶插件</a><br>
+<a href="http://yearito.cn/posts/hexo-theme-beautify.html">Hexo 搭建个人博客系列：主题美化篇</a></p>
+
+                                </div>
+                    </article>
+                    <!--  -->
+                    
+                        <div class="next-post">
+                            <div class="next">下一篇</div>
+                            <a href="https://qiuier.github.io/post/luo-xue-yin-le-zhu-shou/">
+                                <h3 class="post-title">
+                                    洛雪音乐助手-音乐平台整合+vip解析
+                                </h3>
+                            </a>
+                        </div>
+                        
+                            <div id="disqus_thread"></div>
+                            <div id="gitalk-container"></div>
+                </div>
+                <!-- middle -->
+                <div class="main-container-middle"></div>
+                <!-- right -->
+                <div id="sidebar" class="main-container-right">
+                    
+                        <!-- toc -->
+                        
+    <div class="toc-card i-card ">
+        <div class="toc-title i-card-title">目录</div>
+        <div class="toc-content">
+            <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E5%85%B7%E4%BD%93%E6%93%8D%E4%BD%9C">具体操作</a></li>
+<li><a href="#%E5%8F%82%E8%80%83%E6%96%87%E7%AB%A0">参考文章</a></li>
+</ul>
+</li>
+</ul>
 
         </div>
+        <script>
+            function locateCatelogList() {
+                /*获取文章目录集合,可通过:header过滤器*/
+                var alis = $('.post-content :header');
+                /*获取侧边栏目录列表集合**/
+                var sidebar_alis = $('.markdownIt-TOC a');
+                /*获取滚动条到顶部的距离*/
+                var scroll_height = $(window).scrollTop();
+                for (var i = 0; i < alis.length; i++) {
+                    /*获取锚点集合中的元素分别到顶点的距离*/
+                    var a_height = $(alis[i]).offset().top;
+                    if (a_height < scroll_height) {
+                        /*高亮显示*/
+                        sidebar_alis.removeClass('on');
+                        $(sidebar_alis[i]).addClass('on');
+                    }
+                }
+            }
+            $(function() {
+                /*绑定滚动事件 */
+                $(window).bind('scroll', locateCatelogList);
+            });
+        </script>
     </div>
     
-
-                        <!-- 公告栏 -->
-                        
+                            
 
                 </div>
-            </div>
 
+
+
+
+            </div>
 
 
             <div class="site-footer">
@@ -240,6 +300,7 @@
   hljs.initHighlightingOnLoad()
 </script>
 
+
     </div>
     <script>
         $('#sidebar').stickySidebar({
@@ -247,6 +308,7 @@
             // bottomSpacing: 60
         });
     </script>
+    
 </body>
 
 </html>

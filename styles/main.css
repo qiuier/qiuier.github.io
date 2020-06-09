@@ -899,6 +899,12 @@ body {
 .fa {
   font-family: FontAwesome !important;
 }
+.topButton {
+  display: none !important;
+}
+#goToTop {
+  display: none !important;
+}
 .back-to-top {
   cursor: pointer;
   position: fixed;
@@ -907,25 +913,14 @@ body {
   z-index: 2;
   width: 70px;
   height: 900px;
-  background: url(../media/images/scroll.png);
+  background: url(https://blog-static.cnblogs.com/files/fsh001/scroll.gif);
   transition: all 0.5s ease-in-out;
   opacity: 1;
 }
-.back-to-top {
-  right: 60px;
-  width: 70px;
-  height: 900px;
-  top: -900px;
-  bottom: unset;
-  transition: all 0.5s ease-in-out;
-  background: url(../media/images/scroll.png);
-}
-.back-to-top > i {
-  display: none;
-}
-.back-to-top.back-to-top-on {
-  bottom: unset;
-  top: calc(100vh - 900px - 200px);
+@media (max-width: 991px) {
+  .back-to-top {
+    display: none!important;
+  }
 }
 .id_card {
   display: flex;
