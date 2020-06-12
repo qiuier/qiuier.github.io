@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://qiuier.github.io</id>
     <title>林下清清の小站</title>
-    <updated>2020-06-12T10:59:34.746Z</updated>
+    <updated>2020-06-12T12:30:13.786Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://qiuier.github.io"/>
     <link rel="self" href="https://qiuier.github.io/atom.xml"/>
@@ -10,6 +10,83 @@
     <logo>https://qiuier.github.io/images/avatar.png</logo>
     <icon>https://qiuier.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 林下清清の小站</rights>
+    <entry>
+        <title type="html"><![CDATA[Git命令]]></title>
+        <id>https://qiuier.github.io/post/git-ming-ling/</id>
+        <link href="https://qiuier.github.io/post/git-ming-ling/">
+        </link>
+        <updated>2020-06-12T11:43:36.000Z</updated>
+        <summary type="html"><![CDATA[<p>Git命名笔记<br>
+操作顺序自上而下，部分操作非每次必须</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>Git命名笔记<br>
+操作顺序自上而下，部分操作非每次必须</p>
+<!-- more -->
+<h2 id="正文">正文</h2>
+<pre><code>//1、创建仓库
+git init
+
+//2、添加文件
+git add .
+
+//3、查看状态
+git status
+
+//4、把项目提交到本地仓库
+git commit -m '说明'
+
+//5、将github与本地仓库关联
+git remote add origin https://github.com/qiuier/gensokyo.me.git
+
+//6、推送到远程仓库
+git push -u origin master (仓库为空时)
+git push origin master (仓库非空时)
+
+//7、远程仓库拉取
+git pull
+
+</code></pre>
+<h2 id="参考文章">参考文章</h2>
+<p><a href="https://blog.csdn.net/shj_php/article/details/78109916">如何将本地的一个新项目上传到GitHub上新建的仓库中去</a></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[如何给github pages绑定两个域名]]></title>
+        <id>https://qiuier.github.io/post/ru-he-gei-github-pages-bang-ding-liang-ge-yu-ming/</id>
+        <link href="https://qiuier.github.io/post/ru-he-gei-github-pages-bang-ding-liang-ge-yu-ming/">
+        </link>
+        <updated>2020-06-12T11:21:04.000Z</updated>
+        <summary type="html"><![CDATA[<p>本站的初始域名绑定为blog.gensokyo.me，经过几天的使用发现在开头添加blog是一件很麻烦的事。但是github一个仓库只能绑定一个域名，以下介绍一种曲线救国的方法</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>本站的初始域名绑定为blog.gensokyo.me，经过几天的使用发现在开头添加blog是一件很麻烦的事。但是github一个仓库只能绑定一个域名，以下介绍一种曲线救国的方法</p>
+<!-- more -->
+<h2 id="正文">正文</h2>
+<p>github新建一个仓库，并添加一个跳转页面<code>404.html</code></p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;utf-8&quot;&gt;
+        &lt;title&gt;正在重定向…… - walterlv&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;script language=&quot;javascript&quot;&gt;
+        var domain = &quot;blog.gensokyo.me&quot;;
+        var current = window.location.href;
+        var target = current.substring(current.indexOf('/', current.indexOf(':') + 3));
+        window.location.href = &quot;//&quot; + domain + target;
+        location.href = &quot;//&quot; + domain + target;
+    &lt;/script&gt;
+    &lt;body&gt;
+        正在重定向……
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>仓库Setting绑定到新域名，这里是gensokyo.me<br>
+<img src="https://onedrive.gimhoy.com/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBb3JlMmt6ZEhYZ2VoVzd5b3ZPZnd3TzBWYXRIP2U9Qm1jYlU5.png" alt="Setting" loading="lazy"></p>
+<p>然后添加DNS解析，解析到你的博客地址比如我的是<code>qiuier.github.io</code>即可</p>
+<h2 id="参考文章">参考文章</h2>
+<p><a href="https://blog.csdn.net/WPwalter/article/details/106335200">如何给 GitHub Pages 配置多个域名？</a></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[问世间情为何物]]></title>
         <id>https://qiuier.github.io/post/wen-shi-jian-qing-wei-he-wu/</id>
@@ -24,6 +101,7 @@
 直教万转千修等一回<br>
 --《狐妖小红娘》</p>
 </blockquote>
+<figure data-type="image" tabindex="1"><img src="https://onedrive.gimhoy.com/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBb3JlMmt6ZEhYZ2VoV3lncjJYd0pmakZvc1JaP2U9cXpidFRX.jpg" alt="" loading="lazy"></figure>
 ]]></content>
     </entry>
     <entry>
@@ -97,49 +175,6 @@ $(function() {
 <h2 id="参考文章">参考文章</h2>
 <p><a href="https://blog.csdn.net/fshool/java/article/details/104688363">博客园使用悬挂猫(上吊猫)置顶插件</a><br>
 <a href="http://yearito.cn/posts/hexo-theme-beautify.html">Hexo 搭建个人博客系列：主题美化篇</a></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[洛雪音乐助手-音乐平台整合+vip解析]]></title>
-        <id>https://qiuier.github.io/post/luo-xue-yin-le-zhu-shou/</id>
-        <link href="https://qiuier.github.io/post/luo-xue-yin-le-zhu-shou/">
-        </link>
-        <updated>2020-06-08T11:42:33.000Z</updated>
-        <summary type="html"><![CDATA[<p>今天分享一款第三方音乐软件，整合了7个市面常用的音乐平台，并且拥有vip解析能力，以后再也不用氪金听vip专享了。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>今天分享一款第三方音乐软件，整合了7个市面常用的音乐平台，并且拥有vip解析能力，以后再也不用氪金听vip专享了。</p>
-<!-- more -->
-<h2 id="聚合平台">聚合平台</h2>
-<p>软件整合了酷我、酷狗、QQ、网易云、咪咕、虾米、百度平台，并且还提供了一个可以同时搜索几大平台的聚合功能，非常nice。而且作者还给它们起了一个非常有爱的名字。小蜗(<em>/ω＼</em>)太有爱了<br>
-<img src="https://onedrive.gimhoy.com/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBb3JlMmt6ZEhYZ2VoV0dRVlM5WDBLaEQtZ0lGP2U9ajhUVHZh.png" alt="导航栏" loading="lazy"></p>
-<h2 id="vip解析能力">VIP解析能力</h2>
-<p>网易云的灰色无版权，VIP歌曲等。周董的歌可以直接听了<br>
-<img src="https://onedrive.gimhoy.com/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBb3JlMmt6ZEhYZ2VoV01tRk9wc1dnU3NPTlNVP2U9b2FjMkJh.png" alt="解析" loading="lazy"><br>
-qq音乐的vip等等</p>
-<h2 id="主题">主题</h2>
-<p>作者还提供了12个非常有特色的主题，绿意盎然、信口雌黄、木叶之村等，每一个都非常漂亮。<br>
-<img src="https://onedrive.gimhoy.com/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBb3JlMmt6ZEhYZ2VoV0pMcnFzbnAtcE5UZVZlP2U9OU9nN2VK.png" alt="主题" loading="lazy"></p>
-<h2 id="注意事项">注意事项</h2>
-<p>第一次安装需要在设置中把临时接口改为测试接口，不然一些功能无法使用</p>
-<h2 id="下载">下载</h2>
-<p><a href="https://wws.lanzous.com/b01bgwtuf">蓝奏云</a> 密码:9to3<br>
-作者by落雪无痕<br>
-<a href="https://github.com/lyswhut/lx-music-desktop#readme">项目地址</a></p>
-<hr>
-<blockquote>
-<p>很多人谴责那些虐待动物的人，有时候人对人又何尝不是如此残忍</p>
-</blockquote>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[最有效的解压方法]]></title>
-        <id>https://qiuier.github.io/post/zui-you-xiao-de-jie-ya-fang-fa/</id>
-        <link href="https://qiuier.github.io/post/zui-you-xiao-de-jie-ya-fang-fa/">
-        </link>
-        <updated>2020-06-06T15:01:10.000Z</updated>
-        <content type="html"><![CDATA[<p>转发自<a href="https://mp.weixin.qq.com/s/1gDL9iOgug3UzvtwPa41SA">青年文摘</a><br>
-<img src="https://onedrive.gimhoy.com/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBb3JlMmt6ZEhYZ2VoVl9WOTl3R0xsdGpDbW5xP2U9cVVyTDJZ.jpg" alt="" loading="lazy"><br>
-最简单往往是最有效的，但是越简单越容易被忽略</p>
 ]]></content>
     </entry>
 </feed>
