@@ -548,6 +548,13 @@ body {
 .header .nav .menu-container ul li a:hover {
   color: rgba(23, 35, 61, 0.7);
 }
+.header #he-plugin-simple {
+  display: flex;
+  width: 120px;
+  height: 40px;
+  top: 5px;
+  right: 50px;
+}
 @media (max-width: 960px) {
   .header .nav {
     position: relative;
