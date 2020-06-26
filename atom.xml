@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://qiuier.github.io</id>
     <title>林下清清の小站</title>
-    <updated>2020-06-25T13:03:19.172Z</updated>
+    <updated>2020-06-26T15:55:02.433Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://qiuier.github.io"/>
     <link rel="self" href="https://qiuier.github.io/atom.xml"/>
@@ -11,15 +11,62 @@
     <icon>https://qiuier.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 林下清清の小站</rights>
     <entry>
+        <title type="html"><![CDATA[英特尔10代安装win7-戴尔vostro3881]]></title>
+        <id>https://qiuier.github.io/post/ying-te-er-10-dai-an-zhuang-win7-dai-er-vostro3881/</id>
+        <link href="https://qiuier.github.io/post/ying-te-er-10-dai-an-zhuang-win7-dai-er-vostro3881/">
+        </link>
+        <updated>2020-06-26T02:22:48.000Z</updated>
+        <content type="html"><![CDATA[<p><em>本文唯一测试机型为Dell-vostro-3881</em></p>
+<h2 id="配置">配置</h2>
+<p>cpu：intel i3-10100<br>
+显卡：intel uhd 630<br>
+芯片组：b460<br>
+wifi：intel ac-3165</p>
+<h2 id="使用到的工具">使用到的工具</h2>
+<ol>
+<li>优启通pe</li>
+<li><a href="http://www.smxdiy.com/thread-2738-1-1.html">SMXDIY专用 Windows 7 2006 V1.0 公测镜像 </a> 中的 <code>Win7-2006-1.1.iso</code><br>
+应xiaofeng大神要求，本文不再提供下载链接，请点击上面链接自行下载，<strong>此镜像可能需要付费获取</strong></li>
+</ol>
+<h2 id="更改bios">更改bios</h2>
+<ol>
+<li>security —— PTT Security —— 关闭 PTT ON</li>
+<li>secure Boot —— secure Boot Enable —— 关闭 secure Boot Enable</li>
+<li>system Configuration —— SATA Operation —— 选择 AHCI</li>
+<li>video —— Primary Display —— 选择 Intel HD Graphics （加装独立显卡此选项不改）</li>
+</ol>
+<h2 id="操作">操作</h2>
+<ul>
+<li>
+<p>改完bios后进pe，分区选GUID，使用WinNTSetup安装，选择intel 驱动版</p>
+</li>
+<li>
+<p>除主板驱动和显卡驱动外其它驱动需手动安装，本机则只需安装wifi驱动，用驱动精灵就可以安装<br>
+<strong>注意</strong> 请不要升级显卡、主板等其它驱动，只需安装没有的驱动。</p>
+</li>
+<li>
+<p>本主板已不支持CSM，使用xiaofeng大神的镜像可以完美安装win7，其它不支持CSM的主板请自行测试可行性</p>
+</li>
+</ul>
+<h2 id="下载链接">下载链接</h2>
+<p><a href="https://wws.lanzous.com/b01bif5fg">驱动精灵_v9.61（绿色免安装版）</a>  密码:f0p7</p>
+]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[哔哩哔哩v6.2.1去广告]]></title>
         <id>https://qiuier.github.io/post/bi-li-bi-li-v621-qu-guang-gao/</id>
         <link href="https://qiuier.github.io/post/bi-li-bi-li-v621-qu-guang-gao/">
         </link>
         <updated>2020-06-25T12:45:54.000Z</updated>
+        <summary type="html"><![CDATA[<p>分享一个本人一直在用的bilibili<br>
+哔哩哔哩v6.2.1--支持android10<br>
+去开屏广告，去主页各种广告，去版权下载限制等</p>
+]]></summary>
         <content type="html"><![CDATA[<p>分享一个本人一直在用的bilibili<br>
 哔哩哔哩v6.2.1--支持android10<br>
-去开屏广告，去主页各种广告，去版权下载限制等<br>
-by <s>蓝色飞扬</s><br>
+去开屏广告，去主页各种广告，去版权下载限制等</p>
+<!-- more -->
+<p>by <s>蓝色飞扬</s><br>
 <strong>大佬要求禁止分享其作品了，且以后不再公开分享</strong>，大家且用且珍惜吧</p>
 <h2 id="下载链接">下载链接</h2>
 <p><a href="https://wws.lanzous.com/b01bidvfa">哔哩哔哩v6.2.1</a>  密码:9h1j</p>
@@ -78,46 +125,6 @@ by <s>蓝色飞扬</s><br>
         <content type="html"><![CDATA[<p>--转自青年文摘<br>
 就因为只生活短短数十年，更不必长嗟短叹，的确要有心理准备，所以每一天都要过的像最后一天，亲吻爱人，吃一只冰淇淋，穿着最漂亮的衣服去跳舞。</p>
 <figure data-type="image" tabindex="1"><img src="https://onedrive.gimhoy.com/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBb3JlMmt6ZEhYZ2VoWGJFTkVuSFdfLWtXUUdoP2U9bkszMjFC.jpg" alt="" loading="lazy"></figure>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Git命令]]></title>
-        <id>https://qiuier.github.io/post/git-ming-ling/</id>
-        <link href="https://qiuier.github.io/post/git-ming-ling/">
-        </link>
-        <updated>2020-06-12T11:43:36.000Z</updated>
-        <summary type="html"><![CDATA[<p>Git命名笔记<br>
-操作顺序自上而下，部分操作非每次必须</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>Git命名笔记<br>
-操作顺序自上而下，部分操作非每次必须</p>
-<!-- more -->
-<h2 id="正文">正文</h2>
-<pre><code>//1、创建仓库
-git init
-
-//2、添加文件
-git add .
-
-//3、查看状态
-git status
-
-//4、把项目提交到本地仓库
-git commit -m '说明'
-
-//5、将github与本地仓库关联
-git remote add origin https://github.com/qiuier/gensokyo.me.git
-
-//6、推送到远程仓库
-git push -u origin master (仓库为空时)
-git push origin master (仓库非空时)
-
-//7、远程仓库拉取
-git pull
-
-</code></pre>
-<h2 id="参考文章">参考文章</h2>
-<p><a href="https://blog.csdn.net/shj_php/article/details/78109916">如何将本地的一个新项目上传到GitHub上新建的仓库中去</a></p>
 ]]></content>
     </entry>
 </feed>
