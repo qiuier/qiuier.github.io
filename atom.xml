@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://qiuier.github.io</id>
     <title>林下清清の小站</title>
-    <updated>2020-06-26T15:55:02.433Z</updated>
+    <updated>2020-06-30T11:48:35.948Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://qiuier.github.io"/>
     <link rel="self" href="https://qiuier.github.io/atom.xml"/>
@@ -11,12 +11,45 @@
     <icon>https://qiuier.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 林下清清の小站</rights>
     <entry>
+        <title type="html"><![CDATA[关于重装系统后磁盘图标感叹号与BitLocker正在等待激活的问题]]></title>
+        <id>https://qiuier.github.io/post/ci-pan-gan-tan-hao-bitlocker-zheng-zai-deng-dai-ji-huo/</id>
+        <link href="https://qiuier.github.io/post/ci-pan-gan-tan-hao-bitlocker-zheng-zai-deng-dai-ji-huo/">
+        </link>
+        <updated>2020-06-30T11:20:02.000Z</updated>
+        <summary type="html"><![CDATA[<p>关于重装系统后磁盘图标感叹号与BitLocker正在等待激活的问题<br>
+虽然图标带叹号不影响磁盘的正常使用，但是对于强迫症这种东西就不应该存在！</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>关于重装系统后磁盘图标感叹号与BitLocker正在等待激活的问题<br>
+虽然图标带叹号不影响磁盘的正常使用，但是对于强迫症这种东西就不应该存在！</p>
+<!-- more -->
+<h2 id="原因">原因</h2>
+<p>这个现象经常出现在品牌笔记本预装系统使用一段时间后，使用微软官方镜像重装系统。<br>
+因为品牌机预装的家庭中文版会默认开启BitLocker，未登陆微软账户时会加锁但不加密，登陆微软账户后会自动加密磁盘。当然这些都是在后台不为人知的进行的。<br>
+<img src="https://imgsa.baidu.com/forum/w%3D580/sign=865a9ae523738bd4c421b239918a876c/ee01d81fbe096b63aacabb6801338744eaf8acfb.jpg" alt="磁盘图标感叹号" loading="lazy"></p>
+<h2 id="解决方法">解决方法</h2>
+<ul>
+<li>管理员身份运行CMD</li>
+<li>输入<code>manage-bde -off c:</code>   其中c替换为带有感叹号的磁盘</li>
+<li>出现<code>正在解密，请稍后</code> ，耐心等待片刻再打开文件管理器，叹号消失。<br>
+其他关于bitlocker加密的命令</li>
+</ul>
+<pre><code>manage-bde status；##查看状态
+manage-bde -? ##查看帮助
+manage-bde -on c: ##加密c盘，并开启bitblocker
+manage-bde -off c: ##取消加密，并关闭bitblocker
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[英特尔10代安装win7-戴尔vostro3881]]></title>
         <id>https://qiuier.github.io/post/ying-te-er-10-dai-an-zhuang-win7-dai-er-vostro3881/</id>
         <link href="https://qiuier.github.io/post/ying-te-er-10-dai-an-zhuang-win7-dai-er-vostro3881/">
         </link>
         <updated>2020-06-26T02:22:48.000Z</updated>
+        <summary type="html"><![CDATA[<p><em>本文唯一测试机型为Dell-vostro-3881</em></p>
+]]></summary>
         <content type="html"><![CDATA[<p><em>本文唯一测试机型为Dell-vostro-3881</em></p>
+<!-- more -->
 <h2 id="配置">配置</h2>
 <p>cpu：intel i3-10100<br>
 显卡：intel uhd 630<br>
@@ -114,17 +147,6 @@ wifi：intel ac-3165</p>
 <h2 id="下载地址">下载地址</h2>
 <p><a href="https://wws.lanzous.com/b01bhst8f">蓝奏云</a><br>
 密码:9cgs</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[把每一天都当做最后一天]]></title>
-        <id>https://qiuier.github.io/post/ba-mei-yi-tian-du-dang-zuo-zui-hou-yi-tian/</id>
-        <link href="https://qiuier.github.io/post/ba-mei-yi-tian-du-dang-zuo-zui-hou-yi-tian/">
-        </link>
-        <updated>2020-06-15T13:31:39.000Z</updated>
-        <content type="html"><![CDATA[<p>--转自青年文摘<br>
-就因为只生活短短数十年，更不必长嗟短叹，的确要有心理准备，所以每一天都要过的像最后一天，亲吻爱人，吃一只冰淇淋，穿着最漂亮的衣服去跳舞。</p>
-<figure data-type="image" tabindex="1"><img src="https://onedrive.gimhoy.com/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBb3JlMmt6ZEhYZ2VoWGJFTkVuSFdfLWtXUUdoP2U9bkszMjFC.jpg" alt="" loading="lazy"></figure>
 ]]></content>
     </entry>
 </feed>
