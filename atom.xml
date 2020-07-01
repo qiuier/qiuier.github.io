@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://qiuier.github.io</id>
     <title>林下清清の小站</title>
-    <updated>2020-07-01T11:16:32.813Z</updated>
+    <updated>2020-07-01T11:22:06.919Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://qiuier.github.io"/>
     <link rel="self" href="https://qiuier.github.io/atom.xml"/>
@@ -31,15 +31,8 @@
 <p>1、下载完安装包，解压，按顺序安装<code>DellMobileConnectDrivers.msi</code>、<code>ScreenovateTechnologies</code><br>
 <img src="http://wx3.sinaimg.cn/large/006ekoEIly1ggbohyccn5j309a04xt8p.jpg" alt="" loading="lazy"></p>
 <p>2、手机安装<code>DellMobileConnect</code>同名app</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[戴尔原装系统自带 Dell Mobile Connect，解决其它系统无法下载的问题]]></title>
-        <id>https://qiuier.github.io/post/dai-er-yuan-zhuang-xi-tong-zi-dai-dell-mobile-connectjie-jue-qi-ta-xi-tong-wu-fa-xia-zai-de-wen-ti/</id>
-        <link href="https://qiuier.github.io/post/dai-er-yuan-zhuang-xi-tong-zi-dai-dell-mobile-connectjie-jue-qi-ta-xi-tong-wu-fa-xia-zai-de-wen-ti/">
-        </link>
-        <updated>2020-07-01T10:38:25.000Z</updated>
-        <content type="html"><![CDATA[<p>戴尔原装系统自带 Dell Mobile Connect，解决其它系统无法下载的问题，附 Dell Mobile Connect安装包</p>
+<h2 id="下载地址">下载地址</h2>
+<p><a href="https://wws.lanzous.com/b01biwxhi">DellMobileConnect</a>  密码:eno1</p>
 ]]></content>
     </entry>
     <entry>
@@ -127,6 +120,26 @@ wifi：intel ac-3165</p>
 </ul>
 <h2 id="下载链接">下载链接</h2>
 <p><a href="https://wws.lanzous.com/b01bif5fg">驱动精灵_v9.61（绿色免安装版）</a>  密码:f0p7</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[哔哩哔哩v6.2.1去广告]]></title>
+        <id>https://qiuier.github.io/post/bi-li-bi-li-v621-qu-guang-gao/</id>
+        <link href="https://qiuier.github.io/post/bi-li-bi-li-v621-qu-guang-gao/">
+        </link>
+        <updated>2020-06-25T12:45:54.000Z</updated>
+        <summary type="html"><![CDATA[<p>分享一个本人一直在用的bilibili<br>
+哔哩哔哩v6.2.1--支持android10<br>
+去开屏广告，去主页各种广告，去版权下载限制等</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>分享一个本人一直在用的bilibili<br>
+哔哩哔哩v6.2.1--支持android10<br>
+去开屏广告，去主页各种广告，去版权下载限制等</p>
+<!-- more -->
+<p>by <s>蓝色飞扬</s><br>
+<strong>大佬要求禁止分享其作品了，且以后不再公开分享</strong>，大家且用且珍惜吧</p>
+<h2 id="下载链接">下载链接</h2>
+<p><a href="https://wws.lanzous.com/b01bidvfa">哔哩哔哩v6.2.1</a>  密码:9h1j</p>
 ]]></content>
     </entry>
 </feed>
