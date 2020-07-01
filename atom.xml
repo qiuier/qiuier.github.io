@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://qiuier.github.io</id>
     <title>林下清清の小站</title>
-    <updated>2020-06-30T12:31:30.539Z</updated>
+    <updated>2020-07-01T11:16:32.813Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://qiuier.github.io"/>
     <link rel="self" href="https://qiuier.github.io/atom.xml"/>
@@ -10,6 +10,38 @@
     <logo>https://qiuier.github.io/images/avatar.png</logo>
     <icon>https://qiuier.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 林下清清の小站</rights>
+    <entry>
+        <title type="html"><![CDATA[解决应用商店无法下载Dell Mobile Connect的问题]]></title>
+        <id>https://qiuier.github.io/post/dai-er-dell-mobile-connect/</id>
+        <link href="https://qiuier.github.io/post/dai-er-dell-mobile-connect/">
+        </link>
+        <updated>2020-07-01T10:38:25.000Z</updated>
+        <summary type="html"><![CDATA[<p>戴尔原装系统自带 Dell Mobile Connect，解决其它系统无法下载的问题，附 Dell Mobile Connect安装包</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>戴尔原装系统自带 Dell Mobile Connect，解决其它系统无法下载的问题，附 Dell Mobile Connect安装包</p>
+<!-- more -->
+<p>戴尔原装系统自带 Dell Mobile Connect，但是重装系统后或想在其它电脑使用，则无法通过Microsoft store下载，会提示“应用无法兼容你的设备”。<br>
+这里提供给大家安装包，可以通过安装包安装</p>
+<h2 id="介绍">介绍</h2>
+<p>安装要求：<strong>电脑需是win10，且带有蓝牙</strong><br>
+支持平台： android、 iOS<br>
+功能：消息提醒，投屏，文件互传，甚至可以接打电话<br>
+支持开机自启、自动连接手机</p>
+<h2 id="安装步骤">安装步骤</h2>
+<p>1、下载完安装包，解压，按顺序安装<code>DellMobileConnectDrivers.msi</code>、<code>ScreenovateTechnologies</code><br>
+<img src="http://wx3.sinaimg.cn/large/006ekoEIly1ggbohyccn5j309a04xt8p.jpg" alt="" loading="lazy"></p>
+<p>2、手机安装<code>DellMobileConnect</code>同名app</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[戴尔原装系统自带 Dell Mobile Connect，解决其它系统无法下载的问题]]></title>
+        <id>https://qiuier.github.io/post/dai-er-yuan-zhuang-xi-tong-zi-dai-dell-mobile-connectjie-jue-qi-ta-xi-tong-wu-fa-xia-zai-de-wen-ti/</id>
+        <link href="https://qiuier.github.io/post/dai-er-yuan-zhuang-xi-tong-zi-dai-dell-mobile-connectjie-jue-qi-ta-xi-tong-wu-fa-xia-zai-de-wen-ti/">
+        </link>
+        <updated>2020-07-01T10:38:25.000Z</updated>
+        <content type="html"><![CDATA[<p>戴尔原装系统自带 Dell Mobile Connect，解决其它系统无法下载的问题，附 Dell Mobile Connect安装包</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[为什么总是感觉太累]]></title>
         <id>https://qiuier.github.io/post/wei-shi-me-zong-shi-gan-jue-tai-lei/</id>
@@ -19,7 +51,7 @@
         <content type="html"><![CDATA[<p>——摘自<a href="https://mp.weixin.qq.com/s/W9BR1GyvYzqOw_SgBKoTLA">《青年文摘》</a><br>
 人活得累，一是太认真，二是太想要。<br>
 凡是你想控制的，其实都控制了你。<br>
-<img src="https://mmbiz.qpic.cn/mmbiz_jpg/YFQe3wS7BlgWm27rBOmHvVAPibMzia191UFmeKOG18oaDZ6toTGhibAyGN180FvibdIAOYjhl4WuSDnWL0EE6ImjRA/640?wx_fmt=jpeg&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="" loading="lazy"></p>
+<img src="https://onedrive.gimhoy.com/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBb3JlMmt6ZEhYZ2VoaW1CdjdYN0REaVJaZ0V2P2U9NzBEcEhB.jpg" alt="" loading="lazy"></p>
 ]]></content>
     </entry>
     <entry>
@@ -95,50 +127,6 @@ wifi：intel ac-3165</p>
 </ul>
 <h2 id="下载链接">下载链接</h2>
 <p><a href="https://wws.lanzous.com/b01bif5fg">驱动精灵_v9.61（绿色免安装版）</a>  密码:f0p7</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[哔哩哔哩v6.2.1去广告]]></title>
-        <id>https://qiuier.github.io/post/bi-li-bi-li-v621-qu-guang-gao/</id>
-        <link href="https://qiuier.github.io/post/bi-li-bi-li-v621-qu-guang-gao/">
-        </link>
-        <updated>2020-06-25T12:45:54.000Z</updated>
-        <summary type="html"><![CDATA[<p>分享一个本人一直在用的bilibili<br>
-哔哩哔哩v6.2.1--支持android10<br>
-去开屏广告，去主页各种广告，去版权下载限制等</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>分享一个本人一直在用的bilibili<br>
-哔哩哔哩v6.2.1--支持android10<br>
-去开屏广告，去主页各种广告，去版权下载限制等</p>
-<!-- more -->
-<p>by <s>蓝色飞扬</s><br>
-<strong>大佬要求禁止分享其作品了，且以后不再公开分享</strong>，大家且用且珍惜吧</p>
-<h2 id="下载链接">下载链接</h2>
-<p><a href="https://wws.lanzous.com/b01bidvfa">哔哩哔哩v6.2.1</a>  密码:9h1j</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[曲线救国-下载百度文库vip文档]]></title>
-        <id>https://qiuier.github.io/post/qu-xian-jiu-guo-xia-zai-bai-du-wen-ku-vip-wen-dang/</id>
-        <link href="https://qiuier.github.io/post/qu-xian-jiu-guo-xia-zai-bai-du-wen-ku-vip-wen-dang/">
-        </link>
-        <updated>2020-06-25T12:18:06.000Z</updated>
-        <summary type="html"><![CDATA[<h2 id="导读">导读</h2>
-<p>今天朋友让我帮忙下载一个百度文库的vip文件，就一个文件开会员有点不舍得。<br>
-我谷歌了一晚，尝试了好多种方法。功夫不负有心人，终于找到一个完美保留格式下载百度文库vip文件的方法。</p>
-]]></summary>
-        <content type="html"><![CDATA[<h2 id="导读">导读</h2>
-<p>今天朋友让我帮忙下载一个百度文库的vip文件，就一个文件开会员有点不舍得。<br>
-我谷歌了一晚，尝试了好多种方法。功夫不负有心人，终于找到一个完美保留格式下载百度文库vip文件的方法。</p>
-<!-- more -->
-<h2 id="正文">正文</h2>
-<p>首先用<code>冰点文库3.2.7去广告版</code>，解析链接，可以下载成PDF文件，如果只是打印使用，直接打印PDF文件就可以了。<br>
-<img src="https://onedrive.gimhoy.com/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBb3JlMmt6ZEhYZ2VoaDlRRm1wYzhaRDZ2aHNsP2U9QUFjM1c3.jpg" alt="冰点文库" loading="lazy"><br>
-我那朋友还想要编辑，需要转换成docx文件。这里使用<code>万兴PDFelement</code>，把PDF转换成word文件，完美保留原来的公式，表格，格式。<br>
-<img src="https://onedrive.gimhoy.com/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBb3JlMmt6ZEhYZ2VoaUIxLUtITC1HWGhZNnRVP2U9OG40NGF3.jpg" alt="万兴PDF" loading="lazy"></p>
-<h2 id="下载链接">下载链接</h2>
-<p><a href="https://wws.lanzous.com/b01bids8f">冰点文库3.2.7去广告版</a>  密码:i3cu<br>
-<a href="https://wws.lanzous.com/b01bids0h">万兴PDFelement 7.5.4.4813 中文 已激活 免安装</a>   密码:ai97  <a href="www.mpyit.com">老殁出品</a></p>
 ]]></content>
     </entry>
 </feed>
