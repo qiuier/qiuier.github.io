@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://qiuier.github.io</id>
     <title>林下清清の小站</title>
-    <updated>2020-07-01T11:23:10.579Z</updated>
+    <updated>2020-07-02T12:32:54.226Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://qiuier.github.io"/>
     <link rel="self" href="https://qiuier.github.io/atom.xml"/>
@@ -10,6 +10,35 @@
     <logo>https://qiuier.github.io/images/avatar.png</logo>
     <icon>https://qiuier.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 林下清清の小站</rights>
+    <entry>
+        <title type="html"><![CDATA[人活一世，为了自己]]></title>
+        <id>https://qiuier.github.io/post/ren-huo-yi-shi-wei-liao-zi-ji/</id>
+        <link href="https://qiuier.github.io/post/ren-huo-yi-shi-wei-liao-zi-ji/">
+        </link>
+        <updated>2020-07-02T11:14:11.000Z</updated>
+        <summary type="html"><![CDATA[<p>昨天终于看完了《明朝那些事》，讲了很多，也想了很多。从历史可以看到什么？权利、金钱、荣耀，人们为了这些顶破了头，砍掉了头，最后呢？没有最后，一代一代皆如此，无休止。<br>
+终究还是有些人跳脱了出来，他们没有把这些当做目的。他们活着是为了自己，他们用自己的方式度过一生。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>昨天终于看完了《明朝那些事》，讲了很多，也想了很多。从历史可以看到什么？权利、金钱、荣耀，人们为了这些顶破了头，砍掉了头，最后呢？没有最后，一代一代皆如此，无休止。<br>
+终究还是有些人跳脱了出来，他们没有把这些当做目的。他们活着是为了自己，他们用自己的方式度过一生。</p>
+<!-- more -->
+<p>白岩松有句话——<strong>别活得太拧巴</strong><br>
+领导太烂，公司没前途，好想辞职，可以。但是辞了就没饭吃了，那就继续干吧，可以。但是你要想一想，自己是不是真的受不了了，是不是单纯为了坚持而坚持，如果是这样，那就走吧，世上没干过这行的人照样吃饱饭，这里少了你也照样转。</p>
+<hr>
+<p>今天突然得知我的一位同事去世了，很突然。明明昨天还在有说有笑，一个大活人，说没就没了。<br>
+她之前最喜欢许的一个愿是“今晚咱们去跑步吧”，最常说的客套话是“回头带你们去吃汤头炒鸡”。直到昨天下午，这两句话也没有兑现过。<br>
+她，是公认的工作狂，从早到晚把“客户”挂在嘴边，从来没有想过给自己放两天假。就算一起组织的出游，也要做最勤劳的那一个。<br>
+我现在一直不知道原因，但是她有个“毛病”，睡觉时会突然休克<br>
+<img src="http://wx4.sinaimg.cn/large/006ekoEIly1ggcvq0by3nj30hn092ta3.jpg" alt="" loading="lazy"></p>
+<hr>
+<p>昨晚看到了心理学家阿德勒，看到了他的思想：</p>
+<ul>
+<li>生活给我们各种束缚，表面上看，是时间的，金钱的，人际关系的，但实际上，这些束缚是心灵的。</li>
+<li>活在当下，才是生活的意义。</li>
+</ul>
+<p>想了很多，写的很跳，只希望看到的各位能够珍惜眼前，活在当下也许就是给未来最好的礼物。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[解决应用商店无法下载Dell Mobile Connect的问题]]></title>
         <id>https://qiuier.github.io/post/dai-er-dell-mobile-connect/</id>
@@ -120,26 +149,6 @@ wifi：intel ac-3165</p>
 </ul>
 <h2 id="下载链接">下载链接</h2>
 <p><a href="https://wws.lanzous.com/b01bif5fg">驱动精灵_v9.61（绿色免安装版）</a>  密码:f0p7</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[哔哩哔哩v6.2.1去广告]]></title>
-        <id>https://qiuier.github.io/post/bi-li-bi-li-v621-qu-guang-gao/</id>
-        <link href="https://qiuier.github.io/post/bi-li-bi-li-v621-qu-guang-gao/">
-        </link>
-        <updated>2020-06-25T12:45:54.000Z</updated>
-        <summary type="html"><![CDATA[<p>分享一个本人一直在用的bilibili<br>
-哔哩哔哩v6.2.1--支持android10<br>
-去开屏广告，去主页各种广告，去版权下载限制等</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>分享一个本人一直在用的bilibili<br>
-哔哩哔哩v6.2.1--支持android10<br>
-去开屏广告，去主页各种广告，去版权下载限制等</p>
-<!-- more -->
-<p>by <s>蓝色飞扬</s><br>
-<strong>大佬要求禁止分享其作品了，且以后不再公开分享</strong>，大家且用且珍惜吧</p>
-<h2 id="下载链接">下载链接</h2>
-<p><a href="https://wws.lanzous.com/b01bidvfa">哔哩哔哩v6.2.1</a>  密码:9h1j</p>
 ]]></content>
     </entry>
 </feed>
