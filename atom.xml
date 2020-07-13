@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://qiuier.github.io</id>
     <title>林下清清の小站</title>
-    <updated>2020-07-02T12:32:54.226Z</updated>
+    <updated>2020-07-13T12:35:16.843Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://qiuier.github.io"/>
     <link rel="self" href="https://qiuier.github.io/atom.xml"/>
@@ -10,6 +10,28 @@
     <logo>https://qiuier.github.io/images/avatar.png</logo>
     <icon>https://qiuier.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 林下清清の小站</rights>
+    <entry>
+        <title type="html"><![CDATA[win10日历完美替代—优效日历]]></title>
+        <id>https://qiuier.github.io/post/win10-ri-li-wan-mei-ti-dai-you-xiao-ri-li/</id>
+        <link href="https://qiuier.github.io/post/win10-ri-li-wan-mei-ti-dai-you-xiao-ri-li/">
+        </link>
+        <updated>2020-07-13T11:58:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>win10任务栏显示时间没有星期数，日历没有农历节日等细节，吐槽也没用，推荐你一款win10日历完美替代品-优效日历。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>win10任务栏显示时间没有星期数，日历没有农历节日等细节，吐槽也没用，推荐你一款win10日历完美替代品-优效日历。</p>
+<!-- more -->
+<p><img src="https://s1.ax1x.com/2020/07/13/UYg3LT.jpg" alt="优效日历" loading="lazy"><br>
+安装后第一眼就爱了的日历；农历黄历；各种节假日提醒；天气，弥补win10自带日历的短板<br>
+还内置很多实用的工具：<br>
+最好用的时间进度和日期计算，非常适合用于工作提醒；<br>
+良辰吉日挑选，一个很好玩的工具；<br>
+待办事项，一键记录待办，非常实用。<br>
+还有很多其它实用的小工具<br>
+总之是一款一秒就融入工作的工具，墙裂安利大家下载试一试</p>
+<p><a href="http://www.youxiao.cn/">官网-优效日历</a><br>
+<a href="https://wws.lanzous.com/b01bk9pqd">优效日历 v2.0.7.9下载</a> 密码:ebs3</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[人活一世，为了自己]]></title>
         <id>https://qiuier.github.io/post/ren-huo-yi-shi-wei-liao-zi-ji/</id>
@@ -104,51 +126,6 @@ manage-bde -? ##查看帮助
 manage-bde -on c: ##加密c盘，并开启bitblocker
 manage-bde -off c: ##取消加密，并关闭bitblocker
 </code></pre>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[英特尔10代安装win7-戴尔vostro3881]]></title>
-        <id>https://qiuier.github.io/post/ying-te-er-10-dai-an-zhuang-win7-dai-er-vostro3881/</id>
-        <link href="https://qiuier.github.io/post/ying-te-er-10-dai-an-zhuang-win7-dai-er-vostro3881/">
-        </link>
-        <updated>2020-06-26T02:22:48.000Z</updated>
-        <summary type="html"><![CDATA[<p><em>本文唯一测试机型为Dell-vostro-3881</em></p>
-]]></summary>
-        <content type="html"><![CDATA[<p><em>本文唯一测试机型为Dell-vostro-3881</em></p>
-<!-- more -->
-<h2 id="配置">配置</h2>
-<p>cpu：intel i3-10100<br>
-显卡：intel uhd 630<br>
-芯片组：b460<br>
-wifi：intel ac-3165</p>
-<h2 id="使用到的工具">使用到的工具</h2>
-<ol>
-<li>优启通pe</li>
-<li><a href="http://www.smxdiy.com/thread-2738-1-1.html">SMXDIY专用 Windows 7 2006 V1.0 公测镜像 </a> 中的 <code>Win7-2006-1.1.iso</code><br>
-应xiaofeng大神要求，本文不再提供下载链接，请点击上面链接自行下载，<strong>此镜像可能需要付费获取</strong></li>
-</ol>
-<h2 id="更改bios">更改bios</h2>
-<ol>
-<li>security —— PTT Security —— 关闭 PTT ON</li>
-<li>secure Boot —— secure Boot Enable —— 关闭 secure Boot Enable</li>
-<li>system Configuration —— SATA Operation —— 选择 AHCI</li>
-<li>video —— Primary Display —— 选择 Intel HD Graphics （加装独立显卡此选项不改）</li>
-</ol>
-<h2 id="操作">操作</h2>
-<ul>
-<li>
-<p>改完bios后进pe，分区选GUID，使用WinNTSetup安装，选择intel 驱动版</p>
-</li>
-<li>
-<p>除主板驱动和显卡驱动外其它驱动需手动安装，本机则只需安装wifi驱动，用驱动精灵就可以安装<br>
-<strong>注意</strong> 请不要升级显卡、主板等其它驱动，只需安装没有的驱动。</p>
-</li>
-<li>
-<p>本主板已不支持CSM，使用xiaofeng大神的镜像可以完美安装win7，其它不支持CSM的主板请自行测试可行性</p>
-</li>
-</ul>
-<h2 id="下载链接">下载链接</h2>
-<p><a href="https://wws.lanzous.com/b01bif5fg">驱动精灵_v9.61（绿色免安装版）</a>  密码:f0p7</p>
 ]]></content>
     </entry>
 </feed>
