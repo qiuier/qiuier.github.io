@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://qiuier.github.io</id>
     <title>林下清清の小站</title>
-    <updated>2020-07-13T12:35:16.843Z</updated>
+    <updated>2020-07-24T11:18:15.178Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://qiuier.github.io"/>
     <link rel="self" href="https://qiuier.github.io/atom.xml"/>
@@ -10,6 +10,16 @@
     <logo>https://qiuier.github.io/images/avatar.png</logo>
     <icon>https://qiuier.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 林下清清の小站</rights>
+    <entry>
+        <title type="html"><![CDATA[推荐一个电视盒子刷机的网站]]></title>
+        <id>https://qiuier.github.io/post/tui-jian-yi-ge-dian-shi-he-zi-shua-ji-de-wang-zhan/</id>
+        <link href="https://qiuier.github.io/post/tui-jian-yi-ge-dian-shi-he-zi-shua-ji-de-wang-zhan/">
+        </link>
+        <updated>2020-07-24T11:17:02.000Z</updated>
+        <content type="html"><![CDATA[<p><a href="http://xiaobaishuaji.com/">小白刷机</a><br>
+http://xiaobaishuaji.com/</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[win10日历完美替代—优效日历]]></title>
         <id>https://qiuier.github.io/post/win10-ri-li-wan-mei-ti-dai-you-xiao-ri-li/</id>
@@ -96,36 +106,6 @@
 人活得累，一是太认真，二是太想要。<br>
 凡是你想控制的，其实都控制了你。<br>
 <img src="https://onedrive.gimhoy.com/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBb3JlMmt6ZEhYZ2VoaW1CdjdYN0REaVJaZ0V2P2U9NzBEcEhB.jpg" alt="" loading="lazy"></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[关于重装系统后磁盘图标感叹号与BitLocker正在等待激活的问题]]></title>
-        <id>https://qiuier.github.io/post/ci-pan-gan-tan-hao-bitlocker-zheng-zai-deng-dai-ji-huo/</id>
-        <link href="https://qiuier.github.io/post/ci-pan-gan-tan-hao-bitlocker-zheng-zai-deng-dai-ji-huo/">
-        </link>
-        <updated>2020-06-30T11:20:02.000Z</updated>
-        <summary type="html"><![CDATA[<p>关于重装系统后磁盘图标感叹号与BitLocker正在等待激活的问题<br>
-虽然图标带叹号不影响磁盘的正常使用，但是对于强迫症这种东西就不应该存在！</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>关于重装系统后磁盘图标感叹号与BitLocker正在等待激活的问题<br>
-虽然图标带叹号不影响磁盘的正常使用，但是对于强迫症这种东西就不应该存在！</p>
-<!-- more -->
-<h2 id="原因">原因</h2>
-<p>这个现象经常出现在品牌笔记本预装系统使用一段时间后，使用微软官方镜像重装系统。<br>
-因为品牌机预装的家庭中文版会默认开启BitLocker，未登陆微软账户时会加锁但不加密，登陆微软账户后会自动加密磁盘。当然这些都是在后台不为人知的进行的。<br>
-<img src="https://imgsa.baidu.com/forum/w%3D580/sign=865a9ae523738bd4c421b239918a876c/ee01d81fbe096b63aacabb6801338744eaf8acfb.jpg" alt="磁盘图标感叹号" loading="lazy"></p>
-<h2 id="解决方法">解决方法</h2>
-<ul>
-<li>管理员身份运行CMD</li>
-<li>输入<code>manage-bde -off c:</code>   其中c替换为带有感叹号的磁盘</li>
-<li>出现<code>正在解密，请稍后</code> ，耐心等待片刻再打开文件管理器，叹号消失。<br>
-其他关于bitlocker加密的命令</li>
-</ul>
-<pre><code>manage-bde status；##查看状态
-manage-bde -? ##查看帮助
-manage-bde -on c: ##加密c盘，并开启bitblocker
-manage-bde -off c: ##取消加密，并关闭bitblocker
-</code></pre>
 ]]></content>
     </entry>
 </feed>

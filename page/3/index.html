@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -6,7 +7,7 @@
 <meta name="description" content="林下清清の小站,软件分享,个人博客" />
 <meta name="keywords" content="软件分享,blog个人博客,Gridea,林下清清">
 <title>
-    Git命令 | 林下清清の小站
+    林下清清の小站
 </title>
 
 <!-- style -->
@@ -51,10 +52,10 @@
 </script>
 
 
-    
 </head>
 
 <body>
+
     <div class="main">
         <div class="header">
     <div class="nav">
@@ -170,136 +171,107 @@
 </script>
 <script src="https://widget.heweather.net/simple/static/js/he-simple-common.js?v=1.1"></script>
 
-        <div id="main-content" class="post-detail main-container">
-            <!-- left -->
-
+        <div id="main-content" class="post-container main-container">
             <div id="content" class="main-container-left">
-                <article class="post i-card">
-                    <h2 class="post-title">
-                        Git命令
-                    </h2>
-                    <div class="post-info">
-                        <time class="post-time">2020-06-12</time>
-                        
-                        <a href="https://qiuier.github.io/tag/_G-EMk7hJ/"
-                            class="post-tag i-tag
-                            i-tag-warning">
-                            #笔记
-                        </a>
-                        
-                        <a href="https://qiuier.github.io/tag/LP_YBWXbl/"
-                            class="post-tag i-tag
-                            i-tag-info">
-                            #git
-                        </a>
-                        
-                    </div>
-                    
-                    <div class="post-feature-image" style="background-image: url('https://onedrive.gimhoy.com/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBb3JlMmt6ZEhYZ2VoWENyWEl0ei1MUW8wV0wzP2U9SGdaQVFr.jpg')"></div>
-                    
-                    <div class="post-content">
-                        <p>Git命名笔记<br>
-操作顺序自上而下，部分操作非每次必须</p>
-<!-- more -->
-<h2 id="正文">正文</h2>
-<pre><code>//1、创建仓库
-git init
-
-//2、添加文件
-git add .
-
-//3、查看状态
-git status
-
-//4、把项目提交到本地仓库
-git commit -m '说明'
-
-//5、将github与本地仓库关联
-git remote add origin https://github.com/qiuier/gensokyo.me.git
-
-//6、推送到远程仓库
-git push -u origin master (仓库为空时)
-git push origin master (仓库非空时)
-
-//7、远程仓库拉取
-git pull
-
-</code></pre>
-<h2 id="参考文章">参考文章</h2>
-<p><a href="https://blog.csdn.net/shj_php/article/details/78109916">如何将本地的一个新项目上传到GitHub上新建的仓库中去</a></p>
-
-                    </div>
-                </article>
-                <!--  -->
                 
-                <div class="next-post">
-                    <div class="next">下一篇</div>
-                    <a href="https://qiuier.github.io/post/ru-he-gei-github-pages-bang-ding-liang-ge-yu-ming/">
-                        <h3 class="post-title">
-                            如何给github pages绑定两个域名
-                        </h3>
+        
+            <article class="post i-card">
+                <h2 class="post-title">
+                    <a href="https://qiuier.github.io/post/hello-gridea/">
+                        Hello Gridea
                     </a>
+                </h2>
+                <div class="post-info">
+                    <time class="post-time">2018-12-12</time>
+                    
+                        <a href="https://qiuier.github.io/tag/hG9UXcXOb/" class="post-tag i-tag
+                            i-tag-success">
+            #Gridea
+        </a>
+                        
                 </div>
-                
-                <div id="disqus_thread"></div>
-                <div id="gitalk-container"></div>
-            </div>
-            <!-- middle -->
-            <div class="main-container-middle"></div>
-            <!-- right -->
-            <div id="sidebar" class="main-container-right">
-                
-                <!-- toc -->
-                
-    <div class="toc-card i-card ">
-        <div class="toc-title i-card-title">目录</div>
-        <div class="toc-content">
-            <ul class="markdownIt-TOC">
-<li>
-<ul>
-<li><a href="#%E6%AD%A3%E6%96%87">正文</a></li>
-<li><a href="#%E5%8F%82%E8%80%83%E6%96%87%E7%AB%A0">参考文章</a></li>
-</ul>
-</li>
-</ul>
+                <div class="post-article">
+                    
+                            <div class="post-content">
+                                
+                                    <div class="post-content-abstract">
+                                        <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
 
-        </div>
-        <script>
-            function locateCatelogList() {
-                /*获取文章目录集合,可通过:header过滤器*/
-                var alis = $('.post-content :header');
-                /*获取侧边栏目录列表集合**/
-                var sidebar_alis = $('.markdownIt-TOC a');
-                /*获取滚动条到顶部的距离*/
-                var scroll_height = $(window).scrollTop();
-                for (var i = 0; i < alis.length; i++) {
-                    /*获取锚点集合中的元素分别到顶点的距离*/
-                    var a_height = $(alis[i]).offset().top;
-                    if (a_height < scroll_height) {
-                        /*高亮显示*/
-                        sidebar_alis.removeClass('on');
-                        $(sidebar_alis[i]).addClass('on');
-                    }
-                }
-            }
-            $(function() {
-                /*绑定滚动事件 */
-                $(window).bind('scroll', locateCatelogList);
-            });
-        </script>
+                                    </div>
+                                    
+                                            <a class="btn btn-text" href="https://qiuier.github.io/post/hello-gridea/">Read More ~</a>
+                            </div>
+                </div>
+            </article>
+            
+                <!-- 翻页 -->
+                
+    <div class="pagination-container">
+        
+            <a href="https://qiuier.github.io/page/2/" class="page-btn btn">上一页</a>
+            
+                
     </div>
     
+            </div>
+            <!--  -->
+            <div class="main-container-middle"></div>
+            <!--  -->
+            <div id="sidebar" class="main-container-right">
+
+                <!-- 个人信息 -->
+                
+    <div class="id_card i-card">
+        <div class="id_card-avatar" style="background-image: url(https://qiuier.github.io/images/avatar.png?v=1595589492207)">
+        </div>
+        <h1 class="id_card-title">
+            林下清清の小站
+        </h1>
+        <h2 class="id_card-description">
+            我们所过的每一个平凡的日常，也许就是连续发生的奇迹
+        </h2>
+        <!--  -->
+        <div class="id_card-sns">
+            <!-- github -->
+            
+                <a href="https://github.com/qiuier" target="_blank" rel="noopener noreferrer"><i
+                class="fa fa-github"></i></a>
+                
+                    <!-- twitter -->
+                    
+                            <!-- weibo -->
+                            
+                                    <!-- facebook -->
+                                    
+                                        <!-- email -->
+                                        
+                                            <a href="linxiaqingqing@gmail.com" target="_blank" rel="noopener noreferrer"><i
+                    class="fa fa-envelope-square"></i></a>
+                                            
+
+        </div>
+    </div>
+    
+
+                <!-- 公告栏 -->
                 
 
-                </div>
-
-
-
-
+                <!-- 信息栏 -->
+                <!--信息-->
+<div class="information-card i-card ">
+    <div class="information-title i-card-title">每日一言</div>
+    <div class="information-content">
+        <p id="hitokoto">获取中...</p>
+        <script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
+    </div>
+</div>
             </div>
+        </div>
 
 
-            <div class="site-footer">
+
+        <div class="site-footer">
   <p>
     博客在风雨飘摇中度过
     <span id="since">1天0小时0分0秒</span><span class="my-face">(o´ω`o)ﾉ</span>
@@ -351,15 +323,15 @@ git pull
   hljs.initHighlightingOnLoad()
 </script>
 
-
-            </div>
-            <script>
-                $('#sidebar').stickySidebar({
-                    topSpacing: 80,
-                    // bottomSpacing: 60
-                });
-            </script>
-            
+    </div>
+    <div class="back-to-top cd-top faa-float animated cd-is-visible" style="top: -999px;"></div>
+    <script>
+        $('#sidebar').stickySidebar({
+            topSpacing: 80,
+            // bottomSpacing: 60
+        });
+    </script>
+    <script src="https://qiuier.github.io/media/js/plugin.js"></script>
 </body>
 
 </html>
